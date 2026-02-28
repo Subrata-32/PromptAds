@@ -11,7 +11,33 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="admin.css" />
 </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromptAds — Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="admin.css" />
+</head>
 
+<body>
+
+    <!-- LOGIN OVERLAY -->
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-box">
+            <div class="login-logo">⚡ PromptAds</div>
+            <h1>Admin Dashboard</h1>
+            <p>Enter your admin secret to access lead submissions.</p>
+            <div class="login-form">
+                <input type="password" id="secret-input" placeholder="Admin secret key..."
+                    autocomplete="current-password" />
+                <button class="btn-login" id="login-btn">Unlock</button>
+            </div>
+            <p class="login-error" id="login-error" style="display:none;">❌ Incorrect secret. Try again.</p>
+        </div>
+    </div>
 <body>
 
         <!-- MAIN CONTENT -->
@@ -147,4 +173,5 @@
 
 
 </html>
+
 
