@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromptAds — AI-Powered ChatGPT Advertising for Businesses & Agencies</title>
+    <meta name="description"
+        content="PromptAds helps businesses and agencies run high-converting ChatGPT ads powered by AI. Scale your revenue with next-generation conversational advertising." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">PromptAds</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-nav">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#process">Process</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact" class="btn btn-nav">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="floating-orb orb1"></div>
+        <div class="floating-orb orb2"></div>
+        <div class="floating-orb orb3"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Ads Inside ChatGPT — Now Available for US Businesses</span>
+            </div>
+            <h1 class="hero-title">
+                Your Ad, <span class="gradient-text">Inside ChatGPT</span>,<br />
+                In Front of <br class="desktop-only" />Ready-to-Buy Americans
+            </h1>
+            <p class="hero-sub">
+                We place your brand's ads directly inside ChatGPT conversations — reaching US-based customers at the
+                exact moment they're searching, comparing, and deciding. If your business serves the US market, this is
+                the highest-intent ad channel on the internet.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Book Free Strategy Call</a>
+                <a href="#results" class="btn btn-ghost">
+                    <span class="play-icon">▶</span> See Our Results
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="340">0</span><span class="stat-unit">%</span>
+                    <span class="stat-label">Avg. ROAS Increase</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="200">0</span><span class="stat-unit">+</span>
+                    <span class="stat-label">Brands Scaled</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="50">0</span><span class="stat-unit">M+</span>
+                    <span class="stat-label">Ad Impressions Managed</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="chat-mockup" id="chat-mockup">
+                <div class="chat-header">
+                    <span class="chat-dot"></span>
+                    <span class="chat-title">ChatGPT Ad Preview</span>
+                    <span class="chat-live">LIVE</span>
+                </div>
+                <div class="chat-body">
+                    <div class="chat-msg user">
+                        <span>Best project management tools for agencies?</span>
+                    </div>
+                    <div class="chat-msg ai typing" id="ai-msg">
+                        <span class="typing-cursor"></span>
+                    </div>
+                    <div class="chat-ad" id="chat-ad" style="display:none;">
+                        <div class="ad-label">Sponsored</div>
+                        <div class="ad-content">
+                            <strong>🚀 FlowDesk — Built for Agencies</strong>
+                            <p>Trusted by 10,000+ agencies. Manage clients, deadlines & billing in one place. Start
+                                free.</p>
+                            <a href="#" class="ad-cta-btn">Try Free for 14 Days →</a>
+                        </div>
+                    </div>
+                    <div class="chat-msg ai second" id="ai-second" style="display:none;">
+                        <span>Here are the top tools: Asana, ClickUp, Monday.com, and Notion. Each offers...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHATGPT ADS BAR -->
+    <section class="trust-bar" id="how-it-works">
+        <p class="trust-label">Why US Businesses Are Moving Their Ad Budget to ChatGPT</p>
+        <div class="logo-track-outer">
+            <div class="logo-track" id="logo-track">
+                <div class="client-logo">🧠 100M+ Daily US Users</div>
+                <div class="client-logo">🎯 High Purchase Intent</div>
+                <div class="client-logo">💬 Native In-Conversation Ads</div>
+                <div class="client-logo">📉 Lower CPL than Google</div>
+                <div class="client-logo">🇺🇸 US Audience Targeting</div>
+                <div class="client-logo">⚡ Real-Time Ad Placement</div>
+                <div class="client-logo">🔒 Brand-Safe Environment</div>
+                <div class="client-logo">📈 First-Mover Advantage</div>
+                <!-- Duplicated for seamless scroll -->
+                <div class="client-logo">🧠 100M+ Daily US Users</div>
+                <div class="client-logo">🎯 High Purchase Intent</div>
+                <div class="client-logo">💬 Native In-Conversation Ads</div>
+                <div class="client-logo">📉 Lower CPL than Google</div>
+                <div class="client-logo">🇺🇸 US Audience Targeting</div>
+                <div class="client-logo">⚡ Real-Time Ad Placement</div>
+                <div class="client-logo">🔒 Brand-Safe Environment</div>
+                <div class="client-logo">📈 First-Mover Advantage</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR SERVICE -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-tag">Our Service</div>
+            <h2 class="section-title">One Service.<br /><span class="gradient-text">Done Exceptionally Well.</span></h2>
+            <p class="section-sub">We don't do everything &mdash; we do one thing better than anyone else: placing your ad directly inside ChatGPT, in front of US customers who are already asking about what you sell.</p>
+            <div class="single-service-wrap">
+                <div class="single-service-hero">
+                    <div class="ss-icon">&#x1F4AC;</div>
+                    <h3>ChatGPT Ad Placement &mdash; for US Businesses</h3>
+                    <p class="ss-desc">We craft a sponsored message that appears natively inside ChatGPT responses when US users ask questions related to your business. Your ad shows up at the exact right moment &mdash; when someone is actively looking for what you offer.</p>
+                    <div class="ss-features">
+                        <div class="ss-feature">
+                            <span class="sf-icon">&#x1F3AF;</span>
+                            <div>
+                                <strong>Keyword &amp; Prompt Targeting</strong>
+                                <p>We identify the exact ChatGPT prompts your ideal US customers type and place your ad there.</p>
+                            </div>
+                        </div>
+                        <div class="ss-feature">
+                            <span class="sf-icon">&#x270D;&#xFE0F;</span>
+                            <div>
+                                <strong>Native Ad Copywriting</strong>
+                                <p>Sponsored content that feels natural in conversation &mdash; not a banner, not an interruption.</p>
+                            </div>
+                        </div>
+                        <div class="ss-feature">
+                            <span class="sf-icon">&#x1F4CA;</span>
+                            <div>
+                                <strong>Performance Tracking &amp; Reporting</strong>
+                                <p>Clear monthly reports: impressions, clicks, conversions, and cost-per-lead. No fluff.</p>
+                            </div>
+                        </div>
+                        <div class="ss-feature">
+                            <span class="sf-icon">&#x1F504;</span>
+                            <div>
+                                <strong>Ongoing Optimization</strong>
+                                <p>We continuously test and refine your ad copy and targeting to improve results every month.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Get My Ad Inside ChatGPT</a>
+                </div>
+                <div class="single-service-visual">
+                    <div class="sv-stat-stack">
+                        <div class="sv-stat">
+                            <div class="sv-icon">&#x1F1FA;&#x1F1F8;</div>
+                            <div>
+                                <div class="sv-num">US-Only</div>
+                                <div class="sv-label">Geo-targeted to US audiences exclusively</div>
+                            </div>
+                        </div>
+                        <div class="sv-stat">
+                            <div class="sv-icon">&#x26A1;</div>
+                            <div>
+                                <div class="sv-num">7 Days</div>
+                                <div class="sv-label">From sign-up to your ad going live</div>
+                            </div>
+                        </div>
+                        <div class="sv-stat">
+                            <div class="sv-icon">&#x1F4C8;</div>
+                            <div>
+                                <div class="sv-num">Month 1</div>
+                                <div class="sv-label">First results visible within 30 days</div>
+                            </div>
+                        </div>
+                        <div class="sv-stat">
+                            <div class="sv-icon">&#x1F512;</div>
+                            <div>
+                                <div class="sv-num">No Lock-in</div>
+                                <div class="sv-label">Cancel anytime, no long-term contracts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="results section" id="results">
+        <div class="container">
+            <div class="section-tag">Why It Works</div>
+            <h2 class="section-title">What ChatGPT Ads<br /><span class="gradient-text">Deliver for US Businesses</span>
+            </h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-badge badge-green">US Market Reach</div>
+                    <div class="result-metric">100M+</div>
+                    <div class="result-label">US Users on ChatGPT Daily</div>
+                    <div class="result-desc">ChatGPT has over 100 million daily active users in the United States —
+                        making it one of the largest high-intent audiences available to US advertisers right now.</div>
+                    <div class="result-meta">
+                        <span>Source: OpenAI 2025</span>
+                        <span>→ #1 AI platform in the US</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-badge badge-purple">Intent Quality</div>
+                    <div class="result-metric">3–5x</div>
+                    <div class="result-label">Higher Purchase Intent vs. Search</div>
+                    <div class="result-desc">Users who ask ChatGPT about a product or service are actively researching
+                        and comparing — they're deeper in the buying journey than a typical Google searcher.</div>
+                    <div class="result-meta">
+                        <span>Intent stage: Mid-to-Bottom Funnel</span>
+                        <span>→ Ready to buy</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-badge badge-blue">First-Mover Edge</div>
+                    <div class="result-metric">Early</div>
+                    <div class="result-label">Get In Before Your Competitors</div>
+                    <div class="result-desc">ChatGPT advertising is brand new. US businesses who run ads now will lock
+                        in the best placements, lowest CPCs, and highest share-of-voice before the market gets crowded.
+                    </div>
+                    <div class="result-meta">
+                        <span>Ad channel status: Emerging</span>
+                        <span>→ First-mover advantage now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section" id="process">
+        <div class="container">
+            <div class="section-tag">How It Works</div>
+            <h2 class="section-title">From Zero to <span class="gradient-text">Profitable Campaigns</span><br />in 14
+                Days</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Discovery Call</h3>
+                        <p>We learn your business, goals, current ad performance, and target audience. You'll get a
+                            custom ChatGPT ad opportunity report — free.</p>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Strategy & Creative</h3>
+                        <p>Our team builds a custom ad strategy, writes native-style ChatGPT ad copy, and sets up your
+                            campaign structure within 5 business days.</p>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Launch & Optimize</h3>
+                        <p>We launch your campaigns and run continuous A/B tests, bid optimizations, and copy iterations
+                            to maximize performance every single day.</p>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h3>Scale to the Moon</h3>
+                        <p>Once we find your winning formula, we scale aggressively while maintaining efficiency. You
+                            review clear monthly reports and see the ROI grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section-tag">Pricing</div>
+            <h2 class="section-title">Simple, Honest Pricing.<br /><span class="gradient-text">No Hidden Fees.</span></h2>
+            <p class="section-sub">Flat monthly management fee for US-based businesses. Your ad spend is separate &mdash; you control it directly. We handle everything else.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-ideal">Small businesses &amp; local US brands</div>
+                    <div class="plan-price">
+                        <span class="price-dollar">$</span>
+                        <span class="price-num">499</span>
+                        <span class="price-per">/mo</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>&#10003; 1 ChatGPT Ad Campaign</li>
+                        <li>&#10003; US Geo-Targeting</li>
+                        <li>&#10003; Ad Copywriting Included</li>
+                        <li>&#10003; Monthly Performance Report</li>
+                        <li>&#10003; Email Support</li>
+                        <li class="dim">&#10007; A/B Ad Testing</li>
+                        <li class="dim">&#10007; Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-plan">Get Started</a>
+                </div>
+                <div class="pricing-card featured-plan">
+                    <div class="plan-tag">Most Popular</div>
+                    <div class="plan-name">Growth</div>
+                    <div class="plan-ideal">Growing US businesses &amp; agencies</div>
+                    <div class="plan-price">
+                        <span class="price-dollar">$</span>
+                        <span class="price-num">999</span>
+                        <span class="price-per">/mo</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>&#10003; Up to 3 ChatGPT Ad Campaigns</li>
+                        <li>&#10003; US Geo-Targeting</li>
+                        <li>&#10003; Ad Copy &amp; Monthly Creative Refresh</li>
+                        <li>&#10003; Bi-Weekly Performance Reports</li>
+                        <li>&#10003; A/B Ad Testing</li>
+                        <li>&#10003; Dedicated Account Manager</li>
+                        <li>&#10003; Priority Email &amp; Phone Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Agency</div>
+                    <div class="plan-ideal">Agencies managing multiple US clients</div>
+                    <div class="plan-price">
+                        <span class="price-dollar">$</span>
+                        <span class="price-num">2,499</span>
+                        <span class="price-per">/mo</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>&#10003; Unlimited ChatGPT Ad Campaigns</li>
+                        <li>&#10003; US Multi-State Geo-Targeting</li>
+                        <li>&#10003; Full Creative Production</li>
+                        <li>&#10003; Weekly Reports per Client</li>
+                        <li>&#10003; Advanced A/B &amp; Multivariate Tests</li>
+                        <li>&#10003; White-Label Client Reports</li>
+                        <li>&#10003; 24/7 Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-plan">Contact Us</a>
+                </div>
+            </div>
+            <p class="pricing-note">&#x1F4A1; Ad spend is billed directly via ChatGPT's ad platform. Our fee covers strategy, copywriting, management &amp; reporting only.</p>
+        </div>
+    </section>
+
+
+
+    <!-- CTA / CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="contact-orb orb-c1"></div>
+        <div class="contact-orb orb-c2"></div>
+        <div class="container">
+            <div class="contact-box">
+                <div class="section-tag">Get Started</div>
+                <h2 class="section-title">Ready to Build the<br /><span class="gradient-text">Future of Your Ads?</span>
+                </h2>
+                <p class="section-sub">Book a free 30-minute strategy call. We'll audit your current advertising,
+                    identify ChatGPT ad opportunities, and show you a custom growth roadmap — no fluff, no BS.</p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Smith" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" placeholder="john@company.com" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company / Agency Name</label>
+                            <input type="text" id="company" placeholder="Acme Inc." required />
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Monthly Ad Budget</label>
+                            <select id="budget">
+                                <option value="">Select range...</option>
+                                <option>Under $5K/mo</option>
+                                <option>$5K – $15K/mo</option>
+                                <option>$15K – $50K/mo</option>
+                                <option>$50K+/mo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label for="goal">What's your main goal with ChatGPT ads?</label>
+                        <textarea id="goal" rows="3"
+                            placeholder="e.g. Generate more qualified leads, scale e-commerce revenue, offer AI ads to agency clients..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                        Book My Free Strategy Call
+                    </button>
+                    <p class="form-note">🔒 No spam. No obligation. Just a real conversation about your growth.</p>
+                </form>
+                <div class="form-success" id="form-success" style="display:none;">
+                    <div class="success-icon">✅</div>
+                    <h3>You're on the Calendar!</h3>
+                    <p>We'll reach out within 24 hours to confirm your strategy call. Check your inbox for a
+                        confirmation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">PromptAds</span>
+                    </a>
+                    <p>We place your ads inside ChatGPT, reaching US-based customers at the exact moment they're
+                        searching and deciding. Be the first in your market.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#services">ChatGPT Ad Strategy</a>
+                        <a href="#services">AI Copywriting</a>
+                        <a href="#services">Campaign Management</a>
+                        <a href="#services">Agency White-Label</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@promptads.io">hello@promptads.io</a>
+                        <a href="#">Book a Call</a>
+                        <a href="#">Partner Program</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PromptAds. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
